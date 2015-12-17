@@ -39,6 +39,52 @@ padding:5px;
 <script src="test.js"></script>
 </head>
 
+<<<<<<< HEAD
+=======
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filters Tutorial</title>
+<style>
+#header {
+background-color:black;
+color:white;
+text-align:center;
+padding:5px;
+}
+#nav {
+line-height:30px;
+background-color:#eeeeee;
+height:300px;
+width:100px;
+float:left;
+padding:5px;
+}
+#section {
+width:350px;
+float:left;
+padding:10px;
+}
+#footer {
+background-color:black;
+color:white;
+clear:both;
+text-align:center;
+padding:5px;
+}
+</style>
+<TITLE> Filters Tutorial </TITLE>
+<META NAME="Author" CONTENT="Liam Kinney">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="learn.js"></script>
+</head>
+
+>>>>>>> master
 <body link="#C0C0C0" vlink="#808080" alink="#FF0000">
 
 <div id="header">
@@ -52,6 +98,7 @@ padding:5px;
 </div>
 
 <div id="section">
+<<<<<<< HEAD
 <h1>Filter Quiz</h1>
 <p>Upload an audio file and we'll apply different filters to the track. Then
 you can try to guess which one we've applied!</p>
@@ -61,16 +108,59 @@ you can try to guess which one we've applied!</p>
 <button id="stop">Stop</button><br>
 <p>Guess:<br>
 <input type="radio" name="filter" value="original" id="original">Original<br>
+=======
+<h1>Filter Tutorial</h1>
+<p>Upload an audio file and apply different filters to the track.</p>
+<input type="file" id="file"><br>
+<p><input type="radio" name="filter" value="original" id="original">Original<br>
+>>>>>>> master
 <input type="radio" name="filter" value="lowpass" id="lowpass">Lowpass<br>
 <input type="radio" name="filter" value="highpass" id="highpass">Highpass<br>
 <input type="radio" name="filter" value="bandpass" id="bandpass">Bandpass<br>
 <input type="radio" name="filter" value="lowshelf" id="lowshelf">Lowshelf<br>
 <input type="radio" name="filter" value="highshelf" id="highshelf">Highshelf<br>
+<<<<<<< HEAD
 <input type="radio" name="filter" value="allpass" id="allpass">Allpass<br></p>
 <button id="check">Check</button>
 
 
 
+=======
+<input type="radio" name="filter" value="allpass" id="allpass">Allpass<br>
+<button id="play">Play</button>
+<button id="stop">Stop</button></p><br>
+<p><b>Lowpass Filter</b><br>
+<p>Standard second-order resonant lowpass filter with 12dB/octave rolloff.
+Frequencies below the cutoff pass through; frequencies above it are attenuated.
+Cutoff frequency is set at 80 Hz for this lesson</p><br>
+<p><b>Highpass Filter</b><br>
+<p>Standard second-order resonant highpass filter with 12dB/octave rolloff.
+Frequencies below the cutoff are attenuated; frequencies above it pass through.
+Cutoff frequency is set at 1000 Hz for this lesson</p><br>
+<p><b>Bandpass Filter</b><br>
+<p>Standard second-order bandpass filter. Frequencies outside the given range
+of frequencies are attenuated; the frequencies inside it pass through.
+The center of the frequency range is set at 500 Hz for this lesson. The Q
+value determines the width of the band (lower Q-value means wider). The Q-value
+is set at 2 for this lesson.</p><br>
+<p><b>Lowshelf Filter</b><br>
+<p>Standard second-order lowshelf filer. Frequencies lower than the frequency
+get a boost, or an attenuation; frequencies over it are unchanged.
+Shelf Frequency is set at 80 Hz for this lesson, below which the frequencies
+are boosted by 10 dB</p><br>
+<p><b>Highshelf Filter</b><br>
+<p>Standard second-order highshelf filer. Frequencies higher than the frequency
+get a boost or an attenuation; frequencies lower than it are unchanged.
+Cutoff frequency is set at 1000 Hz for this lesson, above which the frequencies
+are boosted by 10 dB</p><br>
+<p><b>Allpass Filter</b><br>
+<p>Standard second-order allpass filter. It lets all frequencies through, but
+changes the phase-relationship between the various frequencies. The frequency
+where the center of the phase transition occurs is set at 500 Hz. The Q-value,
+which controls how sharp the transition is at the medium frequency, is set to
+2 for this lesson (The larger this parameter is, the sharper and larger the
+transition will be.)</p>
+>>>>>>> master
 </div>
 
 <div id="footer">
