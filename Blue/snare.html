@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Foobar</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="main.js"></script>
+	<title>Kick Drum</title>
+	<style>
+		#incorrect {
+			display: none;
+		}
+		#correct {
+			display: none;
+		}
+	</style>
+</head>
+<body id="snare">
+	<p>The snare sounds good, but it lacks a a bit of the "crack" that we'd like. We'll try boosting some frequencies with a peaking filter to achieve our desired sound.</p>
+
+	<p>We've EQed a "target" sound for the snare track. Your job is to adjust the middle frequency of the peaking filter.</p>
+
+
+	<input id="cutoff-slider" type="range" min="0" max="4" step="1" value="0">
+	<span id="cutoff-value"></span>
+	<button id="original" disabled>Original</button>
+	<button id="target" disabled>Target</button>
+	<button id="eq" disabled>EQed</button>
+	<button id="stop">Stop</button>
+
+	<span id="incorrect">Incorrect! Try again.</span>
+	<span id="answer">Once you think you've selected the correct frequency, <button id="submit">click here.</button></span>
+	<span id="correct">Congrats! Click <a href="hat.html">here</a> to continue.</span>
+</body>
+</html>
